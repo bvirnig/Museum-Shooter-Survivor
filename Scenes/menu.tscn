@@ -1,0 +1,48 @@
+[gd_scene load_steps=3 format=3 uid="uid://cfno7v2v605qy"]
+
+[ext_resource type="Script" path="res://Scenes/menu.gd" id="1_2lae1"]
+[ext_resource type="PackedScene" uid="uid://dpxvv0au4rwbg" path="res://button.tscn" id="2_ueius"]
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_2lae1")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+modulate = Color(1, 0.988235, 0.411765, 1)
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 647.0
+
+[node name="Label" type="Label" parent="."]
+modulate = Color(0.682353, 0.243137, 0, 1)
+layout_mode = 0
+offset_right = 1150.0
+offset_bottom = 132.0
+theme_override_font_sizes/font_size = 70
+text = "Museum Survivor: Just Stop Oil"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="btn_exit" parent="." instance=ExtResource("2_ueius")]
+layout_mode = 0
+offset_left = 466.0
+offset_top = 441.0
+offset_right = 684.0
+offset_bottom = 520.0
+text = "EXIT"
+
+[node name="btn_play" parent="." instance=ExtResource("2_ueius")]
+layout_mode = 0
+offset_left = 464.0
+offset_top = 342.0
+offset_right = 685.0
+offset_bottom = 423.0
+text = "PLAY"
+
+[connection signal="click_end" from="btn_exit" to="." method="_on_btn_exit_click_end"]
+[connection signal="click_end" from="btn_play" to="." method="_on_btn_play_click_end"]

@@ -1,0 +1,15 @@
+AnimationPlayer
+AudioStreamPlayer2D
+Button
+Label
+ColorRect
+VBoxContainer
+GridContainer
+TextureRect
+Timer
+Camera2D
+TextureProgressBar
+Node
+Panel
+Control
+CanvasLayer
