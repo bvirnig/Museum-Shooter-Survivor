@@ -1,0 +1,142 @@
+[gd_scene load_steps=48 format=3 uid="uid://du6qbgqucaqov"]
+
+[ext_resource type="PackedScene" uid="uid://bn5fc2u4nouqk" path="res://World/map.tscn" id="1_evsc5"]
+[ext_resource type="PackedScene" uid="uid://dncgepmkc4jf4" path="res://Player/player.tscn" id="2_40uwv"]
+[ext_resource type="PackedScene" uid="uid://ba2claihwes2y" path="res://Utility/enemy_spawner.tscn" id="3_p01g4"]
+[ext_resource type="PackedScene" uid="uid://gvm5jcbbgwdv" path="res://Enemy/police_weak.tscn" id="4_ee8bm"]
+[ext_resource type="Script" path="res://Utility/spawn_info.gd" id="5_jj7s8"]
+[ext_resource type="PackedScene" uid="uid://bbvhxvk65o8el" path="res://Enemy/police_strong.tscn" id="6_nsfkc"]
+[ext_resource type="PackedScene" uid="uid://bnym7tmvekfur" path="res://painting_spawner.tscn" id="7_chwsp"]
+[ext_resource type="Texture2D" uid="uid://cyu4mt43ab518" path="res://Wall Art/wallArt_list_0001_Layer-4.png" id="9_2aiid"]
+[ext_resource type="Texture2D" uid="uid://xb8dxm5h065e" path="res://Wall Art/wallArt_list_0000_Layer-3.png" id="9_x7lp0"]
+[ext_resource type="Texture2D" uid="uid://cjxy06b5oflrd" path="res://Wall Art/wallArt_list_0002_Layer-5.png" id="10_2ok3k"]
+[ext_resource type="AudioStream" uid="uid://bbufl4r1ou1rw" path="res://Audio/Music/battleThemeA.mp3" id="10_rk3we"]
+[ext_resource type="Script" path="res://Audio/Music/snd_Music.gd" id="11_ovtx6"]
+[ext_resource type="Texture2D" uid="uid://duclj3k4oypuo" path="res://Wall Art/wallArt_list_0003_Layer-2.png" id="11_ss3ch"]
+[ext_resource type="Texture2D" uid="uid://cpydlsd2a0ngg" path="res://Wall Art/wallArt_list_0003_Layer-7.png" id="12_f8yvv"]
+[ext_resource type="Texture2D" uid="uid://e12o6b5txbew" path="res://Wall Art/wallArt_list_0004_Layer-1.png" id="13_38cdq"]
+[ext_resource type="Texture2D" uid="uid://dl27otk7e8xjt" path="res://Wall Art/wallArt_list_0004_Layer-8.png" id="14_qvbvi"]
+[ext_resource type="Texture2D" uid="uid://dp1s073jokld3" path="res://Wall Art/wallArt_list_0005_Layer-29.png" id="15_1hori"]
+[ext_resource type="Texture2D" uid="uid://du3u0ptv6j544" path="res://Wall Art/wallArt_list_0006_Layer-28.png" id="16_t1snx"]
+[ext_resource type="Texture2D" uid="uid://dsmyeg1gap7up" path="res://Wall Art/wallArt_list_0007_Layer-27.png" id="17_2sve6"]
+[ext_resource type="Texture2D" uid="uid://54k2a6amtfrg" path="res://Wall Art/wallArt_list_0008_Layer-26.png" id="18_425nv"]
+[ext_resource type="Texture2D" uid="uid://4hewhlie1kjn" path="res://Wall Art/wallArt_list_0009_Layer-25.png" id="19_1vtg1"]
+[ext_resource type="Texture2D" uid="uid://ddacsk1d6k7lt" path="res://Wall Art/wallArt_list_0010_Layer-24.png" id="20_e4kp6"]
+[ext_resource type="Texture2D" uid="uid://xit1yu4ciyrg" path="res://Wall Art/wallArt_list_0011_Layer-23.png" id="21_xfk8v"]
+[ext_resource type="Texture2D" uid="uid://cnjdi6gv8epis" path="res://Wall Art/wallArt_list_0012_Layer-22.png" id="22_jv8vw"]
+[ext_resource type="Texture2D" uid="uid://bihgitqxk3a7h" path="res://Wall Art/wallArt_list_0013_Layer-21.png" id="23_f6ttr"]
+[ext_resource type="Texture2D" uid="uid://bvoqkcw80a0h2" path="res://Wall Art/wallArt_list_0014_Layer-20.png" id="24_a3hik"]
+[ext_resource type="Texture2D" uid="uid://xphvwjn6y3ry" path="res://Wall Art/wallArt_list_0015_Layer-19.png" id="25_bb1kt"]
+[ext_resource type="Texture2D" uid="uid://dpskxi6q4i0b3" path="res://Wall Art/wallArt_list_0016_Layer-18.png" id="26_o10ir"]
+[ext_resource type="Texture2D" uid="uid://cnwhqk68wpyk0" path="res://Wall Art/wallArt_list_0017_Layer-17.png" id="27_muxx8"]
+[ext_resource type="Texture2D" uid="uid://bc0j2xjgpfd7n" path="res://Wall Art/wallArt_list_0018_Layer-16.png" id="28_cfyya"]
+[ext_resource type="Texture2D" uid="uid://dgvrcefnrac1f" path="res://Wall Art/wallArt_list_0019_Layer-15.png" id="29_4wh48"]
+[ext_resource type="Texture2D" uid="uid://dvgads788u1qn" path="res://Wall Art/wallArt_list_0020_Layer-14.png" id="30_au52s"]
+[ext_resource type="Texture2D" uid="uid://cu00kxcpij48g" path="res://Wall Art/wallArt_list_0021_Layer-13.png" id="31_7jea7"]
+[ext_resource type="Texture2D" uid="uid://cnrkoxur5ixub" path="res://Wall Art/wallArt_list_0022_Layer-12.png" id="32_0bu4n"]
+[ext_resource type="Texture2D" uid="uid://b1jlldikp4782" path="res://Wall Art/wallArt_list_0023_Layer-11.png" id="33_62yt6"]
+[ext_resource type="Texture2D" uid="uid://b3u3tuchkmayb" path="res://Wall Art/wallArt_list_0024_Layer-10.png" id="34_t2o2x"]
+[ext_resource type="Texture2D" uid="uid://cdxrrlo3eemql" path="res://Wall Art/wallArt_list_0025_Layer-9.png" id="35_dbvw0"]
+[ext_resource type="PackedScene" uid="uid://d20r3gqas2kms" path="res://Objects/experience_gem.tscn" id="36_6wlps"]
+
+[sub_resource type="Resource" id="Resource_gct3p"]
+script = ExtResource("5_jj7s8")
+time_start = 0
+time_end = 30
+enemy = ExtResource("4_ee8bm")
+enemy_num = 3
+enemy_spawn_delay = 1
+
+[sub_resource type="Resource" id="Resource_4pdyt"]
+script = ExtResource("5_jj7s8")
+time_start = 30
+time_end = 60
+enemy = ExtResource("6_nsfkc")
+enemy_num = 2
+enemy_spawn_delay = 0
+
+[sub_resource type="Resource" id="Resource_vnhfm"]
+script = ExtResource("5_jj7s8")
+time_start = 45
+time_end = 75
+enemy = ExtResource("4_ee8bm")
+enemy_num = 5
+enemy_spawn_delay = 1
+
+[sub_resource type="Resource" id="Resource_5fm6r"]
+script = ExtResource("5_jj7s8")
+time_start = 60
+time_end = 90
+enemy = ExtResource("6_nsfkc")
+enemy_num = 6
+enemy_spawn_delay = 0
+
+[sub_resource type="Resource" id="Resource_1omk5"]
+script = ExtResource("5_jj7s8")
+time_start = 80
+time_end = 110
+enemy = ExtResource("4_ee8bm")
+enemy_num = 6
+enemy_spawn_delay = 1
+
+[sub_resource type="Resource" id="Resource_gusk3"]
+script = ExtResource("5_jj7s8")
+time_start = 105
+time_end = 135
+enemy = ExtResource("6_nsfkc")
+enemy_num = 3
+enemy_spawn_delay = 0
+
+[sub_resource type="Resource" id="Resource_hkoak"]
+script = ExtResource("5_jj7s8")
+time_start = 125
+time_end = 155
+enemy = ExtResource("6_nsfkc")
+enemy_num = 4
+enemy_spawn_delay = 1
+
+[sub_resource type="Resource" id="Resource_niyma"]
+script = ExtResource("5_jj7s8")
+time_start = 150
+time_end = 180
+enemy = ExtResource("6_nsfkc")
+enemy_num = 3
+enemy_spawn_delay = 0
+
+[sub_resource type="Resource" id="Resource_ssllk"]
+script = ExtResource("5_jj7s8")
+time_start = 180
+time_end = 210
+enemy = ExtResource("6_nsfkc")
+enemy_num = 15
+enemy_spawn_delay = 1
+
+[node name="World" type="Node2D"]
+
+[node name="Map" parent="." instance=ExtResource("1_evsc5")]
+
+[node name="Player" parent="." instance=ExtResource("2_40uwv")]
+position = Vector2(318, 182)
+max_y_position = 120.0
+min_y_position = 350.0
+
+[node name="EnemySpawner" parent="." instance=ExtResource("3_p01g4")]
+spawns = Array[ExtResource("5_jj7s8")]([SubResource("Resource_gct3p"), SubResource("Resource_4pdyt"), SubResource("Resource_vnhfm"), SubResource("Resource_5fm6r"), SubResource("Resource_1omk5"), SubResource("Resource_gusk3"), SubResource("Resource_hkoak"), SubResource("Resource_niyma"), SubResource("Resource_ssllk")])
+
+[node name="PaintingSpawner" parent="." instance=ExtResource("7_chwsp")]
+painting_textures = [ExtResource("9_x7lp0"), ExtResource("9_2aiid"), ExtResource("10_2ok3k"), ExtResource("11_ss3ch"), ExtResource("12_f8yvv"), ExtResource("13_38cdq"), ExtResource("14_qvbvi"), ExtResource("15_1hori"), ExtResource("16_t1snx"), ExtResource("17_2sve6"), ExtResource("18_425nv"), ExtResource("19_1vtg1"), ExtResource("20_e4kp6"), ExtResource("21_xfk8v"), ExtResource("22_jv8vw"), ExtResource("23_f6ttr"), ExtResource("24_a3hik"), ExtResource("25_bb1kt"), ExtResource("26_o10ir"), ExtResource("27_muxx8"), ExtResource("28_cfyya"), ExtResource("29_4wh48"), ExtResource("30_au52s"), ExtResource("31_7jea7"), ExtResource("32_0bu4n"), ExtResource("33_62yt6"), ExtResource("34_t2o2x"), ExtResource("35_dbvw0")]
+
+[node name="Loot" type="Node2D" parent="." groups=["loot"]]
+
+[node name="ExperienceGem" parent="Loot" instance=ExtResource("36_6wlps")]
+position = Vector2(421, 199)
+experience = 40
+
+[node name="snd_Music" type="AudioStreamPlayer" parent="."]
+process_mode = 3
+stream = ExtResource("10_rk3we")
+volume_db = -15.0
+autoplay = true
+script = ExtResource("11_ovtx6")
+
+[connection signal="playerdeath" from="Player" to="snd_Music" method="_on_player_playerdeath"]
